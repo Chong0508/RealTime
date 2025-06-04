@@ -18,7 +18,7 @@ public class BankAccountWithLock {
         readLock.lock();
 
         try {
-            System.out.println(Thread.currentThread().getName()+" reads balamce: "+balance);
+            System.out.println(Thread.currentThread().getName()+" reads balance: "+balance);
             return balance;
         } finally {
             readLock.unlock();
