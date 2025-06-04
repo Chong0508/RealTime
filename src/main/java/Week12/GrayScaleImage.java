@@ -41,7 +41,6 @@ public class GrayScaleImage extends RecursiveAction {
         for (int row = 0; row < img.getHeight(); row++) {
             pool.execute(new GrayScaleImage(row, img));
         }
-
         pool.shutdown();
         while (!pool.isTerminated()) {
             Thread.sleep(5);
