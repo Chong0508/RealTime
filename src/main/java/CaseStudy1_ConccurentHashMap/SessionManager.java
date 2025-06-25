@@ -65,8 +65,5 @@ public class SessionManager {
         // Final state
         Thread.sleep(12000); // wait for cleanup to run
         printSessions();
-
-
-
     }
 }
